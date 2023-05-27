@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601993892441",
+    "project_id": "immigrant-e4852",
+    "storage_bucket": "immigrant-e4852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601993892441:android:45e0235426cbb7a9689748",
+        "android_client_info": {
+          "package_name": "com.example.immigrant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBImh5-0w34cE1vuXVDSC_bBMRAs47Zvh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
