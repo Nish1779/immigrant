@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.immigrant">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +16,17 @@
         android:theme="@style/Theme.Immigrant"
         tools:targetApi="31">
         <activity
+            android:name=".JoinOption"
+            android:exported="false" />
+        <activity
+            android:name=".SigninScreen"
+            android:exported="false" />
+        <activity
+            android:name=".GroupmanagementActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginScreen"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,12 +27,12 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginScreen extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 9001;
-    private static final String TAG = "Login failed from the ggogle side";
+    private static final String TAG = "Login failed from the google side";
     private FirebaseAuth firebaseAuth;
     private GoogleSignInClient googleSignInClient;
     private EditText emailEditText;
     private EditText passwordEditText;
-    private Button loginButton;
+    private Button loginButton,gosigninButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,15 @@ public class LoginScreen extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
+        gosigninButton = findViewById(R.id.gosigninButton);
+
+        gosigninButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginScreen.this, SigninScreen.class));
+            }
+        });
+
         loginButton.setOnClickListener(view -> {
             String email = emailEditText.getText().toString();
             String password = passwordEditText.getText().toString();

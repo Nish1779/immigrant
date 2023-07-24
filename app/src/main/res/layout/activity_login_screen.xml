@@ -9,11 +9,11 @@
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/googleSignInButton"
-        android:layout_below="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/gosigninButton"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -36,6 +36,13 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_below="@+id/passwordEditText"/>
+
+    <Button
+        android:id="@+id/gosigninButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:text="New User ?" />
 
 
 </RelativeLayout>
